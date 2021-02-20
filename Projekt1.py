@@ -30,7 +30,7 @@ garpike and stingray are also present.'''
 REGISTROVANI_UZIVATELE = {'USER': 'PASSWORD', 'bob': '123', 'ann': 'pass123', 'mike': 'password123', 'liz': 'pass123'}
 ODDELOVAC = '-' * 40
 POCET_CLANKU = (1, 2, 3)
-
+#zkouška
 JMENO = input('username: ')
 HESLO = input('password: ')
 print(ODDELOVAC)

@@ -43,7 +43,15 @@ if REGISTROVANI_UZIVATELE.get(JMENO) == HESLO:
     if VYBER in POCET_CLANKU:
         print(ODDELOVAC)
         TEXT = TEXTS[VYBER - 1]  # Vybraný text
-        SLOVA_V_TEXTU = TEXT.split()
+        SLOVA_V_TEXTU_A = TEXT.split()
+
+        SLOVA_V_TEXTU = []
+        for X in SLOVA_V_TEXTU_A:
+          X = X.strip(':')
+          X = X.strip('.')
+          X = X.strip(',')
+          SLOVA_V_TEXTU.append(X)
+
         # Výpočet1: počet slov v textu
         POCET_SLOV = len(SLOVA_V_TEXTU)
         print('There are ', POCET_SLOV, ' words in the selected text.', sep='')
